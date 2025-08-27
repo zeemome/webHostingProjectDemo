@@ -7,5 +7,26 @@
 <body>
 <h1>Welcome to My Java Website!</h1>
 <p>This page is served from a Spring Boot backend.</p>
+<br>
+<form action="/submit_registration" method="POST">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="mobile">Mobile:</label><br>
+    <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" placeholder="1234567890" required><br><br>
+
+    <label>Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="male" required>
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="female" required>
+    <label for="female">Female</label><br>
+    <input type="radio" id="other" name="gender" value="other" required>
+    <label for="other">Other</label><br><br>
+
+    <input type="submit" value="Register">
+</form>
 </body>
 </html>
